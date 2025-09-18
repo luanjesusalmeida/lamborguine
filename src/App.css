@@ -5,7 +5,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: #3b3b3b;
 }
 .App2 {
 
@@ -14,7 +14,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: #d1d1d1;
+  background-color: #3b3b3b;
  
 }
 
@@ -160,7 +160,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: #d1d1d1;
+  background-color: #3b3b3b;
   color: #ffffff;
   justify-content: space-between;
   flex-direction: row;
@@ -175,11 +175,37 @@
   width: 400px;
   border-radius: 15px;
   margin: 40px;
-  background-color: red;
+
   position: relative;
   box-shadow: inset 0 0 0 3px black;
   animation: descer 1s ease-out forwards;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  
 }
+
+.boxCarro img {
+
+width: 700px;
+height: 300px;
+
+overflow: visible;         
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+
+}
+
+.boxCarro:hover {
+  transform: translateY(-20px); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+}
+
+.boxCarro img:hover {
+  transform: translateY(-20px); 
+}
+
 
 @keyframes descer{
   0%{
@@ -202,3 +228,5 @@
 #tres {
   animation-delay: 0s;
 }
+
+

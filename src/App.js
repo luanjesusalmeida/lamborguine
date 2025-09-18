@@ -60,11 +60,13 @@ function App() {
         </div>
       ) :
 
+        
+      
         <div className="conteudo">
 
-          <div className="boxCarro" id="um"></div>
-          <div className="boxCarro" id="dois"></div>
-          <div className="boxCarro" id="tres"></div>
+          <div className="boxCarro" id="um"> <img src="./img/side_view_Lamborghini_Urus_Pearl_Capsule_2021_1-removebg-preview.png"/></div>
+          <div className="boxCarro" id="dois"> <img src='./img/2025-temerario-lamborghini-13kgxeeeeee0rm44spet44l-removebg-preview.png'/> </div>
+          <div className="boxCarro" id="tres"> <img src="./img/Lamborghini-Revuelto-2023-6-1-removebg-preview.png"/></div>
 
         </div>
 
