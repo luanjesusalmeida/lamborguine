@@ -5,11 +5,11 @@ import { useEffect, useState } from 'react';
 function App() {
   const [showSplash, setShowSplash] = useState(false);
   const [started, setStarted] = useState(false);
-  const [appBranco, setAppBranco] = useState(false); // controla se o usuário clicou no botão
+  const [appBranco, setAppBranco] = useState(false); 
 
   const handleStart = () => {
-    setStarted(true); // indica que o usuário clicou
-    setShowSplash(true); // mostra a splash
+    setStarted(true); 
+    setShowSplash(true); 
 
 
     const fadeOut = (audio, duration) => {
@@ -40,7 +40,7 @@ function App() {
       setAppBranco(true)
     }, 1000);
     setTimeout(() => {
-      setShowSplash(false); // esconde a splash após 3 segundos
+      setShowSplash(false); 
     }, 5000);
   };
 
@@ -64,9 +64,9 @@ function App() {
       
         <div className="conteudo">
 
-          <div className="boxCarro" id="um"> <img src="./img/side_view_Lamborghini_Urus_Pearl_Capsule_2021_1-removebg-preview.png"/></div>
-          <div className="boxCarro" id="dois"> <img src='./img/2025-temerario-lamborghini-13kgxeeeeee0rm44spet44l-removebg-preview.png'/> </div>
-          <div className="boxCarro" id="tres"> <img src="./img/Lamborghini-Revuelto-2023-6-1-removebg-preview.png"/></div>
+          <div className="boxCarro" id="um"> <img src="./img/side_view_Lamborghini_Urus_Pearl_Capsule_2021_1-removebg-preview.png"/><p>Lamburguine Urus</p></div> 
+          <div className="boxCarro" id="dois"> <img src='./img/2025-temerario-lamborghini-13kgxeeeeee0rm44spet44l-removebg-preview.png'/> <p>Lamborguine Temerario</p></div>
+          <div className="boxCarro" id="tres"> <img src="./img/Lamborghini-Revuelto-2023-6-1-removebg-preview.png"/> <p>Lamborguine Revuelto</p></div> 
 
         </div>
 

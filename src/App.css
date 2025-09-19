@@ -25,15 +25,15 @@
   font-size: 150px;
   cursor: pointer;
 
-  /* Faz o texto "prateado" */
+
   background: linear-gradient(120deg,
       #cccccc 20%,
       #ffffff 40%,
       #cccccc 60%);
   -webkit-background-clip: text;
-  /* aplica o gradiente no texto */
+ 
   -webkit-text-fill-color: transparent;
-  /* deixa a cor do texto transparente */
+ 
 
   position: relative;
   overflow: hidden;
@@ -48,7 +48,7 @@
   font-size: 150px;
   cursor: pointer;
 
-  /* Faz o texto "invisível", mas com gradiente preparado */
+  
   background: linear-gradient(110deg,
       transparent 0%,
       transparent 40%,
@@ -90,17 +90,16 @@
   align-items: center;
   justify-content: center;
 
-  /* Começa escuro e invisível */
   background-color: black;
   opacity: 0;
 
-  /* Mantém o blur/fade */
+  
   animation: focusIn 4s forwards, subirSplash 1s ease-in-out forwards;
   animation-delay: 0s, 4s;
-  /* sobe depois que o fadeIn do fundo termina */
+
 }
 
-/* Fade-in da imagem (escuro desaparecendo) */
+
 @keyframes focusIn {
   from {
     filter: blur(10px);
@@ -113,7 +112,7 @@
   }
 }
 
-/* Animação que move a tela de splash para cima */
+
 @keyframes subirSplash {
   from {
     transform: translateY(0);
@@ -123,7 +122,6 @@
     transform: translateY(-100%);
   }
 
-  /* sobe a tela inteira */
 }
 
 
@@ -131,10 +129,10 @@
   width: 0px;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 0.5s;
-  /* opcional: faz logo aparecer um pouco depois */
+
 }
 
-/* Animação de fade + scale do logo */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -155,7 +153,7 @@
 
 
 
-/* Conteúdo da página */
+
 .conteudo {
   width: 100vw;
   height: 100vh;
@@ -183,6 +181,9 @@
   display: flex;
   justify-content: center;
   align-items: start;
+ 
+  flex-wrap: wrap;
+  
   
 }
 
@@ -230,3 +231,10 @@ overflow: visible;
 }
 
 
+.boxCarro p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
